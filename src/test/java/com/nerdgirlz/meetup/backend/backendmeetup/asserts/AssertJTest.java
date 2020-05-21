@@ -13,7 +13,6 @@ public class AssertJTest {
   public void learning() {
     List<Integer> numbers = Arrays.asList(12,15,45);
 
-    //assertThat(numbers, hasSize(3));
     assertThat(numbers).hasSize(3)
       .contains(12,15)
       .allMatch(x -> x > 10)

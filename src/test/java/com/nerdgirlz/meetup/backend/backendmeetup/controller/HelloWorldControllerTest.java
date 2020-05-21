@@ -23,7 +23,6 @@ public class HelloWorldControllerTest {
 
   @Test
   public void helloWorld_basic() throws Exception {
-    //call GET "/hello-world"  application/json
 
     RequestBuilder request = MockMvcRequestBuilders
       .get("/hello-nerdgirlz")
@@ -34,8 +33,6 @@ public class HelloWorldControllerTest {
       .andExpect(content().string("Hello meetup 35 desenvolvimento back end"))
       .andReturn();
 
-    //verify "Hello World"
-    //assertEquals("Hello World", result.getResponse().getContentAsString());
   }
 
 }

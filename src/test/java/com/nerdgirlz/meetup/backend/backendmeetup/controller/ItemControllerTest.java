@@ -96,8 +96,6 @@ public class ItemControllerTest {
       .andExpect(status().isOk())
       .andExpect(content().json("[]"))
       .andReturn();
-    //JSONAssert.assertEquals(expected, result.getResponse().getContentAsString(), false);
-
   }
 
 }

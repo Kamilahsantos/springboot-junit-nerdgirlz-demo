@@ -24,7 +24,6 @@ public class ItemBusinessService {
     for(Item item:items) {
       item.setValue(item.getPrice() * item.getQuantity());
     }
-
     return items;
   }
 

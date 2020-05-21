@@ -32,5 +32,4 @@ public class ItemRepositoryTest {
 
     assertEquals("desenvolvimentobackend",item.getName());
   }
-
 }

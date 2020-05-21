@@ -54,4 +54,5 @@ public class Item {
   public String toString() {
     return String.format("Item[%d, %s, %d, %d]", id, name, price, quantity);
   }
+
 }

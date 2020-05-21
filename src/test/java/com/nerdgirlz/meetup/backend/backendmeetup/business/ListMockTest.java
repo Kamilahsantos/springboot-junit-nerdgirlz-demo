@@ -54,11 +54,9 @@ public class ListMockTest {
 
   @Test
   public void verificationBasics() {
-    // SUT
     String value1 = mock.get(0);
     String value2 = mock.get(1);
 
-    // Verify
     verify(mock).get(0);
     verify(mock, times(2)).get(anyInt());
     verify(mock, atLeast(1)).get(anyInt());
@@ -70,10 +68,8 @@ public class ListMockTest {
   @Test
   public void argumentCapturing() {
 
-    //SUT
     mock.add("SomeString");
 
-    //Verification
     ArgumentCaptor<String> captor = ArgumentCaptor.forClass(String.class);
     verify(mock).add(captor.capture());
 
@@ -84,11 +80,9 @@ public class ListMockTest {
   @Test
   public void multipleArgumentCapturing() {
 
-    //SUT
     mock.add("SomeString1");
     mock.add("SomeString2");
 
-    //Verification
     ArgumentCaptor<String> captor = ArgumentCaptor.forClass(String.class);
 
     verify(mock, times(2)).add(captor.capture());

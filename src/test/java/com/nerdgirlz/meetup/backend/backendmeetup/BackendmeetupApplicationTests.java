@@ -9,5 +9,4 @@ class BackendmeetupApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-
 }

@@ -25,4 +25,5 @@ public class JsonAssertTest {
     String expectedResponse = "{id:32, name:python, price:0}";
     JSONAssert.assertEquals(expectedResponse, actualResponse, false);
   }
+
 }

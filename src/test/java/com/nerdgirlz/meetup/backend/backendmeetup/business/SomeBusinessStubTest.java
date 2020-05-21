@@ -42,7 +42,7 @@ public class SomeBusinessStubTest {
   public void calculateSumUsingDataService_empty() {
     SomeBusinessImpl business = new SomeBusinessImpl();
     business.setSomeDataService(new SomeDataServiceEmptyStub());
-    int actualResult = business.calculateSumUsingDataService();//new int[] {}
+    int actualResult = business.calculateSumUsingDataService();
     int expectedResult = 0;
     assertEquals(expectedResult, actualResult);
   }
@@ -51,7 +51,7 @@ public class SomeBusinessStubTest {
   public void calculateSumUsingDataService_oneValue() {
     SomeBusinessImpl business = new SomeBusinessImpl();
     business.setSomeDataService(new SomeDataServiceOneElementStub());
-    int actualResult = business.calculateSumUsingDataService();//new int[] { 5 }
+    int actualResult = business.calculateSumUsingDataService();
     int expectedResult = 5;
     assertEquals(expectedResult, actualResult);
   }

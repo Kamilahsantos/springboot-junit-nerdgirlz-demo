@@ -33,4 +33,5 @@ public class ItemBusinessServiceTest {
     assertEquals(100, items.get(0).getValue());
     assertEquals(400, items.get(1).getValue());
   }
+
 }

@@ -25,5 +25,4 @@ public class ItemControllerIT {
     JSONAssert.assertEquals("[{id:35},{id:37},{id:34}]",
       response, false);
   }
-
 }

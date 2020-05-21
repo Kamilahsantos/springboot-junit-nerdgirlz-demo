@@ -29,4 +29,5 @@ public class SomeBusinessTest {
     int expectedResult = 5;
     assertEquals(expectedResult, actualResult);
   }
+
 }
